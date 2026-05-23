@@ -1,1 +1,42 @@
 
+x = int(input("Nhap so tien X = "))
+
+to500 = x // 500
+x = x % 500
+
+to200 = x // 200
+x = x % 200
+
+to100 = x // 100
+x = x % 100
+
+to50 = x // 50
+x = x % 50
+
+to20 = x // 20
+x = x % 20
+
+to10 = x // 10
+x = x % 10
+
+to5 = x // 5
+x = x % 5
+
+to2 = x // 2
+x = x % 2
+
+to1 = x
+
+tong = to500 + to200 + to100 + to50 + to20 + to10 + to5 + to2 + to1
+
+print("Loai 500 gom", to500, "to")
+print("Loai 200 gom", to200, "to")
+print("Loai 100 gom", to100, "to")
+print("Loai 50 gom", to50, "to")
+print("Loai 20 gom", to20, "to")
+print("Loai 10 gom", to10, "to")
+print("Loai 5 gom", to5, "to")
+print("Loai 2 gom", to2, "to")
+print("Loai 1 gom", to1, "to")
+
+print("TONG CONG CO", tong, "TO")
