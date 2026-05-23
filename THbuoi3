@@ -1,1 +1,34 @@
+def strobogrammatic(n, m):
 
+    if n == 0:
+        return [""]
+
+    if n == 1:
+        return ["0", "1", "8"]
+
+    ds = strobogrammatic(n - 2, m)
+
+    kq = []
+
+    for s in ds:
+
+        if n != m:
+            kq.append("0" + s + "0")
+
+        kq.append("1" + s + "1")
+        kq.append("6" + s + "9")
+        kq.append("8" + s + "8")
+        kq.append("9" + s + "6")
+
+    return kq
+
+
+# Nhập n
+n = int(input("Nhap n = "))
+
+print("Cac so strobogrammatic gom", n, "chu so:")
+
+kq = strobogrammatic(n, n)
+
+for x in kq:
+    print(x)
